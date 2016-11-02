@@ -15,7 +15,7 @@ import org.apache.commons.beanutils.converters.DateConverter;
  */
 public class CommonUtils {
 	/**
-	 * 返回一个不重复的字符串
+	 * 返回一个随机的32长不重复的字符串 用途：用来做id，数据库表中的主键是不能重复的，它就是不重复 激活码也是不能重复的，也可以用它
 	 * 
 	 * @return
 	 */
@@ -32,7 +32,7 @@ public class CommonUtils {
 	 */
 
 	/**
-	 * 把map转换成指定的对象
+	 * 把map转换成指定的对象 作用：把一个map中的数据封装到javabean中 要求： 1要求map中的key名称与javabean中的属性名称相同
 	 * 
 	 * @param map
 	 * @param clazz
